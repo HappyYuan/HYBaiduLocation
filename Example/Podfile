@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'HYBaiduLocation_Example' do
+  pod 'HYBaiduLocation', :path => '../'
+
+  target 'HYBaiduLocation_Tests' do
+    inherit! :search_paths
+
+    pod 'Kiwi'
+  pod 'FBSnapshotTestCase'
+  end
+end
