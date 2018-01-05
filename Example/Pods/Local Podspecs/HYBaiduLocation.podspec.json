@@ -1,0 +1,22 @@
+{
+  "name": "HYBaiduLocation",
+  "version": "0.1.0",
+  "summary": "A short description of HYBaiduLocation.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/1131356109@qq.com/HYBaiduLocation",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "1131356109@qq.com": "1131356109@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/1131356109@qq.com/HYBaiduLocation.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "HYBaiduLocation/Classes/**/*"
+}

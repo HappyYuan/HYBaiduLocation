@@ -1,0 +1,6 @@
+framework module HYBaiduLocation {
+  umbrella header "HYBaiduLocation-umbrella.h"
+
+  export *
+  module * { export * }
+}

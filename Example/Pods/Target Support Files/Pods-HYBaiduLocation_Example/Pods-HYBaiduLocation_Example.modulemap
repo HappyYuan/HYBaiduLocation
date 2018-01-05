@@ -1,0 +1,6 @@
+framework module Pods_HYBaiduLocation_Example {
+  umbrella header "Pods-HYBaiduLocation_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
