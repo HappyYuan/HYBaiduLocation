@@ -1,26 +1,22 @@
 PODS:
+  - BMKLocationKit (1.0.1)
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - HYBaiduLocation (0.1.0)
   - Kiwi (2.4.0)
 
 DEPENDENCIES:
+  - BMKLocationKit
   - FBSnapshotTestCase
-  - HYBaiduLocation (from `../`)
   - Kiwi
 
-EXTERNAL SOURCES:
-  HYBaiduLocation:
-    :path: ../
-
 SPEC CHECKSUMS:
+  BMKLocationKit: b4adffae918758c02bddec7ace8ba5487544bd69
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  HYBaiduLocation: 8399e53a4edb9fd02d1b5bc1f397788859baf865
   Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
 
-PODFILE CHECKSUM: 7f3bf5f9492d4943a590737925e51be96e1b0615
+PODFILE CHECKSUM: 496e444f2b3f1ae64c8b1d76a684137f91dc261e
 
 COCOAPODS: 1.3.1

@@ -1,12 +1,12 @@
 use_frameworks!
 
 target 'HYBaiduLocation_Example' do
-  pod 'HYBaiduLocation', :path => '../'
-
+    #pod 'HYBaiduLocation', :path => '../'
+    pod 'BMKLocationKit'
   target 'HYBaiduLocation_Tests' do
     inherit! :search_paths
 
     pod 'Kiwi'
-  pod 'FBSnapshotTestCase'
+    pod 'FBSnapshotTestCase'
   end
 end

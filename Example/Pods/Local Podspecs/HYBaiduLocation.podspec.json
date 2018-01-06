@@ -2,8 +2,8 @@
   "name": "HYBaiduLocation",
   "version": "0.1.0",
   "summary": "A short description of HYBaiduLocation.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/1131356109@qq.com/HYBaiduLocation",
+  "description": "百度定位功能测试",
+  "homepage": "https://github.com/HappyYuan/HYBaiduLocation",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,16 @@
     "1131356109@qq.com": "1131356109@qq.com"
   },
   "source": {
-    "git": "https://github.com/1131356109@qq.com/HYBaiduLocation.git",
+    "git": "https://github.com/HappyYuan/HYBaiduLocation.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "HYBaiduLocation/Classes/**/*"
+  "source_files": "HYBaiduLocation/Classes/**/*",
+  "dependencies": {
+    "BMKLocationKit": [
+
+    ]
+  }
 }

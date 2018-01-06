@@ -1,9 +1,10 @@
 EMBEDDED_CONTENT_CONTAINS_SWIFT = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) $(PLATFORM_DIR)/Developer/Library/Frameworks "$PODS_CONFIGURATION_BUILD_DIR/FBSnapshotTestCase" "$PODS_CONFIGURATION_BUILD_DIR/Kiwi" "$PODS_CONFIGURATION_BUILD_DIR/HYBaiduLocation"
+FRAMEWORK_SEARCH_PATHS = $(inherited) $(PLATFORM_DIR)/Developer/Library/Frameworks "$PODS_CONFIGURATION_BUILD_DIR/FBSnapshotTestCase" "$PODS_CONFIGURATION_BUILD_DIR/Kiwi" "${PODS_ROOT}/BMKLocationKit/framework"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/BMKLocationKit"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/FBSnapshotTestCase/FBSnapshotTestCase.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Kiwi/Kiwi.framework/Headers" $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/HYBaiduLocation/HYBaiduLocation.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "FBSnapshotTestCase" -framework "Kiwi"
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/FBSnapshotTestCase/FBSnapshotTestCase.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Kiwi/Kiwi.framework/Headers" $(inherited)  -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/BMKLocationKit"
+OTHER_LDFLAGS = $(inherited) -l"sqlite3.0" -l"stdc++.6.0.9" -framework "AdSupport" -framework "CoreLocation" -framework "CoreTelephony" -framework "FBSnapshotTestCase" -framework "Foundation" -framework "Kiwi" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"
 OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
